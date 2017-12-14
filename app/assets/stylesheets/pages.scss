@@ -1,0 +1,135 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300|Spectral+SC);
+
+$gutter: 30px;
+
+$darkest-grey: #222222;
+$dark-grey: #455A64;
+$mid-grey: #607D8B;
+$light-grey: #CFD8DC;
+$lightest-grey: #EDEDED;
+
+$red: #FD6A57;
+$yellow: #FDA957;
+$blue: #398A9D;
+$green: #41BD62;
+
+$text-1: #404146;
+$text-2: #757575;
+
+$dark: #54546c;
+$light: #8283a7;
+$faint: #D8E9EF;
+
+
+body {
+	font-family: 'Spectral SC', '华文楷体', 'STKaiti', Helvetica, sans-serif;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+
+	a {
+		margin: $gutter / 2;
+		padding: $gutter / 3;
+		display: block;
+		text-decoration: none;
+		color: white;
+		font-size: 12px;
+
+		&:hover {
+			color: silver;
+			transition: color 0.3s ease-in;
+		}
+	}
+}
+
+.navbar-logo img {
+	max-width: 120px;
+}
+
+h3 {
+	color: silver;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+h6 {
+	color: $darkest-grey;
+}
+
+p {
+	color: silver;
+	font-size: 11px;
+}
+
+.page-wrapper {
+	padding: $gutter * 2 $gutter * 6 $gutter;
+	text-align: center;
+	margin: 0 auto;
+	background-color: black;
+	max-width: 2080px;
+
+	@media (max-width: 1020px) {
+		padding: $gutter $gutter *2;
+	}		
+
+	@media (max-width: 480px) {
+		padding: $gutter/2 $gutter;
+	}
+}
+
+.page-content {
+	padding: $gutter * 2 $gutter * 3;
+	background-color: $darkest-grey;
+
+	@media (max-width: 720px) {
+		padding: $gutter * 2;
+	}			
+
+	@media (max-width: 480px) {
+		padding: $gutter;
+	}
+}
+
+.offices {
+	margin-top: $gutter * 2;
+}
+
+.office-location {
+	display: inline-block;
+	width: 200px;
+	margin: 0 $gutter * 2;
+}
+
+.footer-pattern {
+	background: image-url("pattern_strip_lg.png");
+	background-size: contain;
+	background-position: center 45%;
+	background-attachment: fixed;
+
+	height: 30px;
+
+	@media (max-width: 480px) {
+		display: none;
+	}
+
+}
+
+hr {
+	width: 7.5px;
+	height: 7.5px;
+	border-radius: 50%;
+	background: silver;
+	border: none;
+	box-shadow: 30px 0 silver, -30px 0 silver;
+}
+
+footer {
+	margin-top: $gutter * 2;
+}
