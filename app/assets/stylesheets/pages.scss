@@ -28,6 +28,11 @@ $faint: #D8E9EF;
 body {
 	font-family: 'Spectral SC', '华文楷体', 'STKaiti', Helvetica, sans-serif;
 	margin: 0;
+	color: silver;
+}
+
+.hidden {
+	display: none;
 }
 
 nav ul li {
